@@ -284,8 +284,15 @@ export default function ContactPage() {
               </div>
 
               {submitResult && (
-                <div className={`text-center p-3 rounded-xl ${submitResult.success ? "bg-green-50 text-green-700" : "bg-red-50 text-red-700"}`}>
-                  {submitResult.success ? "Message sent successfully! We'll get back to you soon." : submitResult.error}
+                <div
+                  className={`text-center p-4 rounded-xl ${submitResult.success
+                      ? "bg-brand/10 text-brand"
+                      : "bg-brand-button/10 text-brand-button"
+                    }`}
+                >
+                  {submitResult.success
+                    ? "Message sent successfully! We'll get back to you soon."
+                    : submitResult.error}
                 </div>
               )}
 
