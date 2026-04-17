@@ -17,7 +17,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Bridge Gap Capital Limited",
+  title: "BridgeGap Capital Limited",
   description: "Empowering businesses and communities through accessible financial services.",
 };
 
