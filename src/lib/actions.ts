@@ -4,8 +4,16 @@ import { db } from "@/db";
 import { loanApplications, contactSubmissions } from "@/db/schema";
 import { loanApplicationSchema, contactSchema } from "@/lib/validations";
 import { Resend } from "resend";
+import { LoanApplicationEmail, ContactFormEmail } from "@/lib/emails";
+import { render } from "@react-email/components";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+
+const loanTypeLabels = {
+  traders: "Traders Loan",
+  corporate: "Corporate Loan",
+  business: "Business Loan",
+} as const;
 
 export async function submitLoanApplication(data: unknown) {
   const parsed = loanApplicationSchema.safeParse(data);
@@ -29,30 +37,27 @@ export async function submitLoanApplication(data: unknown) {
       purpose: parsed.data.purpose,
     });
 
-    const loanTypeLabels = {
-      traders: "Traders Loan",
-      corporate: "Corporate Loan",
-      business: "Business Loan",
-    };
+    const emailHtml = await render(
+      LoanApplicationEmail({
+        fullName: parsed.data.fullName,
+        phone: parsed.data.phone,
+        email: parsed.data.email,
+        loanType: loanTypeLabels[parsed.data.loanType],
+        employerName: parsed.data.employerName,
+        monthlySalary: parsed.data.monthlySalary,
+        businessName: parsed.data.businessName,
+        cacNumber: parsed.data.cacNumber,
+        loanAmount: parsed.data.loanAmount,
+        repaymentPeriod: parsed.data.repaymentPeriod,
+        purpose: parsed.data.purpose,
+      })
+    );
 
     await resend.emails.send({
       from: "BridgeGap Capital <onboarding@resend.dev>",
       to: process.env.LOANS_EMAIL!,
-      subject: `New Loan Application — ${loanTypeLabels[parsed.data.loanType]}`,
-      html: `
-        <h2>New Loan Application</h2>
-        <p><strong>Name:</strong> ${parsed.data.fullName}</p>
-        <p><strong>Phone:</strong> ${parsed.data.phone}</p>
-        <p><strong>Email:</strong> ${parsed.data.email}</p>
-        <p><strong>Loan Type:</strong> ${loanTypeLabels[parsed.data.loanType]}</p>
-        ${parsed.data.employerName ? `<p><strong>Employer:</strong> ${parsed.data.employerName}</p>` : ""}
-        ${parsed.data.monthlySalary ? `<p><strong>Monthly Salary:</strong> ${parsed.data.monthlySalary}</p>` : ""}
-        ${parsed.data.businessName ? `<p><strong>Business Name:</strong> ${parsed.data.businessName}</p>` : ""}
-        ${parsed.data.cacNumber ? `<p><strong>CAC Number:</strong> ${parsed.data.cacNumber}</p>` : ""}
-        <p><strong>Loan Amount:</strong> ${parsed.data.loanAmount}</p>
-        <p><strong>Repayment Period:</strong> ${parsed.data.repaymentPeriod}</p>
-        <p><strong>Purpose:</strong> ${parsed.data.purpose}</p>
-      `,
+      subject: `New Loan Application — ${loanTypeLabels[parsed.data.loanType]} — ${parsed.data.fullName}`,
+      html: emailHtml,
     });
 
     return { success: true };
@@ -78,17 +83,21 @@ export async function submitContactForm(data: unknown) {
       message: parsed.data.message,
     });
 
+    const emailHtml = await render(
+      ContactFormEmail({
+        firstName: parsed.data.firstName,
+        lastName: parsed.data.lastName,
+        email: parsed.data.email,
+        phone: parsed.data.phone,
+        message: parsed.data.message,
+      })
+    );
+
     await resend.emails.send({
       from: "BridgeGap Capital <onboarding@resend.dev>",
       to: process.env.CONTACT_EMAIL!,
       subject: `New Contact Message from ${parsed.data.firstName} ${parsed.data.lastName}`,
-      html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${parsed.data.firstName} ${parsed.data.lastName}</p>
-        <p><strong>Email:</strong> ${parsed.data.email}</p>
-        <p><strong>Phone:</strong> ${parsed.data.phone}</p>
-        <p><strong>Message:</strong> ${parsed.data.message}</p>
-      `,
+      html: emailHtml,
     });
 
     return { success: true };
