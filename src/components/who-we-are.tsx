@@ -11,7 +11,7 @@ export function WhoWeAre() {
 
           <div className="md:col-span-3 space-y-6 text-base md:text-lg text-neutral-800 leading-relaxed">
             <p>
-              BridgeGap Capital Ltd is a licensed microfinance institution providing a diversified range of financial services to Nigerians. Since April 2000, we have been committed to bridging the financial gap for traders, small business owners, and employed individuals across Lagos State.
+              BridgeGap Capital Ltd is a licensed microfinance institution providing a diversified range of financial services to Nigerians. Since July 2017, we have been committed to bridging the financial gap for traders, small business owners, and employed individuals across Lagos State.
             </p>
             <p>
               We believe that access to credit should not be a privilege reserved for a few. Our mission is to provide accessible, affordable, and responsible financial services that empower our customers to grow their businesses, meet their personal needs, and improve their quality of life.

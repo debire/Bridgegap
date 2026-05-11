@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { LoanApplicationForm } from "@/components/loan-application-form";
+//import { LoanApplicationForm } from "@/components/loan-application-form";
 import { Cta } from "@/components/cta";
 
 export default function ServicesPage() {
@@ -159,12 +159,12 @@ export default function ServicesPage() {
                 <li>• Vendors who need flexible repayment matching their sales cycle</li>
               </ul>
 
-              <button
-                onClick={() => scrollTo("loan-application")}
+              <Link
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-brand-button px-8 py-3 text-white font-medium hover:bg-brand-button/90 transition-colors mt-8"
               >
                 Apply for Loan
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -203,12 +203,12 @@ export default function ServicesPage() {
                 <li>• Individuals who prefer predictable monthly repayments</li>
               </ul>
 
-              <button
-                onClick={() => scrollTo("loan-application")}
+              <Link
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-brand-button px-8 py-3 text-white font-medium hover:bg-brand-button/90 transition-colors mt-8"
               >
                 Apply for Loan
-              </button>
+              </Link>
             </div>
 
             <div className="relative w-full min-h-[300px] rounded-xl overflow-hidden">
@@ -265,16 +265,20 @@ export default function ServicesPage() {
                 <li>• Entrepreneurs needing equipment or working capital</li>
               </ul>
 
-              <button
-                onClick={() => scrollTo("loan-application")}
+              <Link
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-brand-button px-8 py-3 text-white font-medium hover:bg-brand-button/90 transition-colors mt-8"
               >
                 Apply for Loan
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+      {/* ======================== */}
+      {/* Asset Management - COMMENTED OUT PER CLIENT REQUEST */}
+      {/* ======================== */}
+      {/*
       <div className="max-w-7xl mx-auto px-6 md:px-10 mb-20">
         <div className="mb-6">
           <h3 className="font-heading text-brand text-xl md:text-2xl font-semibold">
@@ -316,7 +320,7 @@ export default function ServicesPage() {
             </Link>
           </div>
 
-          <div className="relative w-full min-h-[300px] rounded-xl overflow-hidden">
+          <div className="relative w-full h-[300px] md:h-full min-h-[300px] rounded-xl overflow-hidden">
             <Image
               src="/images/asset.jpg"
               alt="Asset Management"
@@ -326,6 +330,7 @@ export default function ServicesPage() {
           </div>
         </div>
       </div>
+      */}
       <div className="max-w-7xl mx-auto px-6 md:px-10 mb-20">
         <h3 className="font-heading text-brand text-xl md:text-2xl font-semibold">
           General Loan Eligibility Requirements
@@ -341,6 +346,10 @@ export default function ServicesPage() {
           <li>• Meet product-specific collateral requirements</li>
         </ul>
       </div>
+      {/* ======================== */}
+      {/* Loan Application Form - COMMENTED OUT PER CLIENT REQUEST */}
+      {/* ======================== */}
+      {/*
       <div id="loan-application" className="scroll-mt-28 max-w-7xl mx-auto px-6 md:px-10 mb-20">
         <div className="mb-6">
           <h3 className="font-heading text-brand text-xl md:text-2xl font-semibold">
@@ -350,9 +359,9 @@ export default function ServicesPage() {
             Complete the form below to apply for a loan. Our team will contact you within 24–48 hours.
           </p>
         </div>
-
         <LoanApplicationForm />
       </div>
+      */}
       <Cta />
     </main>
   );

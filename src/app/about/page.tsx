@@ -25,7 +25,7 @@ export default function AboutPage() {
                     </div>
                     <div className="md:col-span-3 space-y-6 text-base text-neutral-800 leading-relaxed">
                         <p>
-                            BridgeGap Capital Ltd is a licensed microfinance institution providing a diversified range of financial services to Nigerians. Since April 2000, we have been committed to bridging the financial gap for traders, small business owners, and employed individuals across Lagos State.
+                            BridgeGap Capital Ltd is a licensed microfinance institution providing a diversified range of financial services to Nigerians. Since July 2017, we have been committed to bridging the financial gap for traders, small business owners, and employed individuals across Lagos State.
                         </p>
                         <p>
                             We believe that access to credit should not be a privilege reserved for a few. Our mission is to provide accessible, affordable, and responsible financial services that empower our customers to grow their businesses, meet their personal needs, and improve their quality of life.
@@ -42,7 +42,7 @@ export default function AboutPage() {
                     </div>
                     <div className="md:col-span-3 space-y-6 text-base text-neutral-800 leading-relaxed">
                         <p>
-                            For over two decades, we have stood alongside Nigeria&apos;s grassroots economy providing micro-lending solutions to traders, employees and small businesses. Licensed in Lagos, our journey began with a simple but powerful mission: to empower women and underserved communities with access to finance that could transform lives.
+                            For over a decade, we have stood alongside Nigeria&apos;s grassroots economy providing micro-lending solutions to traders, employees and small businesses. Licensed in Lagos, our journey began with a simple but powerful mission: to empower women and underserved communities with access to finance that could transform lives.
                         </p>
                         <p>
                             From bustling markets to quiet workshops, we have seen firsthand how a small loan can spark big change helping a trader expand her stall, an artisan buy better tools, or a small enterprise grow into a thriving business. Each success story has fueled our passion and strengthened our commitment.
@@ -136,130 +136,134 @@ export default function AboutPage() {
                     </div>
                 </div>
             </div>
+            
+            {/* ======================== */}
+      {/* Our Journey - COMMENTED OUT PER CLIENT REQUEST */}
+      {/* ======================== */}
+      {/*
+      <div className="max-w-5xl mx-auto px-6 md:px-10 mb-20">
+        <h2 className="font-heading text-brand text-2xl md:text-3xl font-semibold">
+          Our Journey
+        </h2>
+        <p className="mt-2 text-base md:text-lg text-neutral-800 mb-16">
+          25 years of growth, transformation, and service
+        </p>
 
-            <div className="max-w-5xl mx-auto px-6 md:px-10 mb-20">
-                <h2 className="font-heading text-brand text-2xl md:text-3xl font-semibold">
-                    Our Journey
-                </h2>
-                <p className="mt-2 text-base md:text-lg text-neutral-800 mb-16">
-                    25 years of growth, transformation, and service
+        <div className="flex flex-col gap-20">
+          <div className="flex justify-start">
+            <div className="w-full md:w-[45%]">
+              <div className="border-t border-neutral-300 pt-4 mb-4">
+                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
+                  2000
                 </p>
-
-                <div className="flex flex-col gap-20">
-                    {/* 2000 - Left */}
-                    <div className="flex justify-start">
-                        <div className="w-full md:w-[45%]">
-                            <div className="border-t border-neutral-300 pt-4 mb-4">
-                                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
-                                    2000
-                                </p>
-                            </div>
-                            <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
-                                Commenced Operations
-                            </h3>
-                            <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
-                                BridgeGap Capital began its journey with a vision to provide accessible financial services to Nigerians.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="flex justify-start md:justify-end">
-                        <div className="w-full md:w-[45%]">
-                            <div className="border-t border-neutral-300 pt-4 mb-4">
-                                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
-                                    2004
-                                </p>
-                            </div>
-                            <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
-                                HD Ventures
-                            </h3>
-                            <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
-                                Established HD Ventures, marking our first major business expansion.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="flex justify-start">
-                        <div className="w-full md:w-[45%]">
-                            <div className="border-t border-neutral-300 pt-4 mb-4">
-                                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
-                                    2006
-                                </p>
-                            </div>
-                            <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
-                                Converted to Limited Liability Company
-                            </h3>
-                            <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
-                                Incorporated as HDV Integrated Services, a Limited Liability Company, strengthening our corporate foundation.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="flex justify-start md:justify-end">
-                        <div className="w-full md:w-[45%]">
-                            <div className="border-t border-neutral-300 pt-4 mb-4">
-                                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
-                                    2015
-                                </p>
-                            </div>
-                            <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
-                                Moved to Corporate Headquarters
-                            </h3>
-                            <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
-                                Relocated to our corporate headquarters at 3, Eniola Street, Idi-Oro, Mushin, Lagos.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="flex justify-start">
-                        <div className="w-full md:w-[45%]">
-                            <div className="border-t border-neutral-300 pt-4 mb-4">
-                                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
-                                    2017
-                                </p>
-                            </div>
-                            <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
-                                Rebranded to BGCL & Opened Mowe Outlet
-                            </h3>
-                            <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
-                                Changed our name to BridgeGap Capital Ltd (BGCL) and expanded with our Mowe branch.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="flex justify-start md:justify-end">
-                        <div className="w-full md:w-[45%]">
-                            <div className="border-t border-neutral-300 pt-4 mb-4">
-                                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
-                                    2020
-                                </p>
-                            </div>
-                            <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
-                                Opened Ikorodu Office
-                            </h3>
-                            <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
-                                Extended our reach with a new branch in Ikorodu to serve the growing community.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="flex justify-start">
-                        <div className="w-full md:w-[45%]">
-                            <div className="border-t border-neutral-300 pt-4 mb-4">
-                                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
-                                    2025
-                                </p>
-                            </div>
-                            <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
-                                Opened Badagry Office
-                            </h3>
-                            <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
-                                Continued expansion with our Badagry branch, bringing our total to 4 outlets across Lagos State.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
+                Commenced Operations
+              </h3>
+              <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
+                BridgeGap Capital began its journey with a vision to provide accessible financial services to Nigerians.
+              </p>
             </div>
+          </div>
+
+          <div className="flex justify-start md:justify-end">
+            <div className="w-full md:w-[45%]">
+              <div className="border-t border-neutral-300 pt-4 mb-4">
+                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
+                  2004
+                </p>
+              </div>
+              <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
+                HD Ventures
+              </h3>
+              <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
+                Established HD Ventures, marking our first major business expansion.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-start">
+            <div className="w-full md:w-[45%]">
+              <div className="border-t border-neutral-300 pt-4 mb-4">
+                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
+                  2006
+                </p>
+              </div>
+              <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
+                Converted to Limited Liability Company
+              </h3>
+              <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
+                Incorporated as HDV Integrated Services, a Limited Liability Company, strengthening our corporate foundation.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-start md:justify-end">
+            <div className="w-full md:w-[45%]">
+              <div className="border-t border-neutral-300 pt-4 mb-4">
+                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
+                  2015
+                </p>
+              </div>
+              <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
+                Moved to Corporate Headquarters
+              </h3>
+              <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
+                Relocated to our corporate headquarters at 3, Eniola Street, Idi-Oro, Mushin, Lagos.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-start">
+            <div className="w-full md:w-[45%]">
+              <div className="border-t border-neutral-300 pt-4 mb-4">
+                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
+                  2017
+                </p>
+              </div>
+              <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
+                Rebranded to BGCL & Opened Mowe Outlet
+              </h3>
+              <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
+                Changed our name to BridgeGap Capital Ltd (BGCL) and expanded with our Mowe branch.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-start md:justify-end">
+            <div className="w-full md:w-[45%]">
+              <div className="border-t border-neutral-300 pt-4 mb-4">
+                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
+                  2020
+                </p>
+              </div>
+              <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
+                Opened Ikorodu Office
+              </h3>
+              <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
+                Extended our reach with a new branch in Ikorodu to serve the growing community.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-start">
+            <div className="w-full md:w-[45%]">
+              <div className="border-t border-neutral-300 pt-4 mb-4">
+                <p className="text-right font-heading text-brand-button text-lg md:text-xl font-semibold">
+                  2025
+                </p>
+              </div>
+              <h3 className="font-heading text-brand text-base md:text-lg font-semibold mb-2">
+                Opened Badagry Office
+              </h3>
+              <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
+                Continued expansion with our Badagry branch, bringing our total to 4 outlets across Lagos State.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      */}
 
             <div className="max-w-7xl mx-auto px-6 md:px-10 mb-20">
                 <div className="mb-12">
