@@ -62,7 +62,7 @@ export default function AboutPage() {
             <div className="max-w-7xl mx-auto px-6 md:px-10 mt-10 mb-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     {/* Team photo */}
-                    <div className="relative w-full rounded-xl overflow-hidden">
+                    <div className="relative w-full h-[300px] md:h-full min-h-[300px] rounded-xl overflow-hidden">
                         <Image
                             src="/images/team.jpg"
                             alt="BridgeGap Capital Team"
