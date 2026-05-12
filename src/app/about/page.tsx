@@ -279,9 +279,9 @@ export default function AboutPage() {
                     {[
                         {
                             number: "01",
-                            title: "25+ Years of Experience",
+                            title: "10 Years of Experience",
                             description:
-                                "With over two decades in the microfinance industry, we have the expertise and stability that comes from years of serving Nigerian communities.",
+                                "With over a decade in the microfinance industry, we have the expertise and stability that comes from years of serving Nigerian communities.",
                         },
                         {
                             number: "02",

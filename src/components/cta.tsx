@@ -16,7 +16,7 @@ export function Cta() {
           </p>
           <div className="mt-8 flex justify-center">
             <Link
-              href="/loan-application"
+                href="/contact"
               className="inline-flex items-center justify-center rounded-full bg-brand-button px-8 py-3 text-white font-medium hover:bg-brand-button/90 transition-colors"
             >
               Get Started

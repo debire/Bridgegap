@@ -1,9 +1,9 @@
 const reasons = [
   {
     number: "01",
-    title: "25+ Years of Trust",
+    title: "10 Years of Trust",
     description:
-      "Operating since April 2000, we have built lasting relationships with thousands of traders and business owners across Lagos.",
+      "Operating since July 2017, we have built lasting relationships with thousands of traders and business owners across Lagos.",
   },
   {
     number: "02",

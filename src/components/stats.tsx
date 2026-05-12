@@ -1,5 +1,5 @@
 const stats = [
-  { value: "25", label: "Years of Operation" },
+  { value: "10", label: "Years of Operation" },
   { value: "150Hh", label: "/year CSR Support" },
   { value: "10K", label: "Loans Disbursed" },
   { value: "4", label: "Branches" },
